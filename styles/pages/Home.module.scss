@@ -1,6 +1,13 @@
 .container {
   min-height: 100vh;
   
+  .news_posts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+    
+  }
 }
 
 .larguraMaximaContainer{
@@ -8,9 +15,3 @@
   margin: 0 auto;
 }
 
-.news_posts{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}

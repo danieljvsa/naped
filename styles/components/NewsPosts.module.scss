@@ -3,15 +3,21 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 894px;
+    margin-right: 2rem;
+    
 
     .pannel{
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 90rem;
+        
+        padding-bottom: 2rem;
 
         .img_pannel{
-            height: 151px;
+            height: 150px;
             width: 200px;
             margin-right: 2rem;
             margin-bottom: 2rem;
@@ -25,6 +31,8 @@
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
+            width: 590px;
+            margin-right: 8rem;
 
             h4{
                 font-family: 'Lexend Deca', sans-serif;
@@ -33,6 +41,7 @@
                 line-height: 20px;
                 color: #FEFBFB;
                 margin-bottom: 1.5rem;
+                text-overflow: ellipsis;
             }
 
             p{
@@ -71,4 +80,21 @@
             }
         }
     }
+
+    .pannel:first-child{
+        margin-top: 24.5rem;
+    }
+
+    .pannel:last-child{
+        padding: 0;
+    }
+}
+
+.movies_pannel::-webkit-scrollbar{
+    width: 8px;
+    background: #282830;
+}
+
+.movies_pannel::-webkit-scrollbar-thumb{
+    background: #8257E6;
 }

@@ -1,0 +1,43 @@
+.week_pannel{
+    display: flex;
+    flex-direction: column;
+
+    .title{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h4{
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 20px;
+            color: #FEFBFB;
+            border-bottom: 3px solid #8257E6;
+            padding-bottom: 13px;
+            margin-bottom: 24px;
+            text-align: left;
+        }
+    }
+    
+
+    .pannel{
+        height: 25rem;
+        width: 40rem;
+        margin-bottom: 2.8rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        
+        
+        
+        p{
+            margin: 17rem 5rem 2rem 2rem;  
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;  
+            color: #FEFBFB;
+        }
+    }
+}
