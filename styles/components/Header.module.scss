@@ -1,0 +1,67 @@
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        margin: 2rem 0;
+        h3{
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: #8257E6;
+        }
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+
+        .nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 12rem;
+
+            li{
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                margin-right: 3.75rem;
+
+                a{
+                    color: #C4C4C4;
+                }
+            }
+
+            :last-child{
+                margin: 0;
+            }
+
+            :hover{
+                border-bottom: 2px solid #8257E6;
+            }
+        }
+
+        button{
+            padding: 0.4rem 1.2rem;
+            border: 1px solid #8257E6;
+            border-radius: 30px;
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            
+            background: transparent;
+
+            a{
+                color: #FEFBFB;
+            }        
+
+        }
+    }
+}
