@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import React from 'react'
+import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { MoviesPannel } from '../components/MoviesPannel'
 import { NewsPosts } from '../components/NewsPosts'
@@ -28,6 +29,9 @@ const Home: NextPage = () => {
         </div>
         <RecentNews />
       </main>
+      <footer className={styles.larguraMaximaContainer}>
+        <Footer />
+      </footer>
     </div>
   )
 }

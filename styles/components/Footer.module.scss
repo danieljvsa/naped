@@ -1,0 +1,25 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10rem 0 2rem 0;
+
+    h3{
+        font-family: 'Lexend Deca', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 30px;
+        color: #8257E6;
+        margin-bottom: 2rem;
+    }
+
+    span{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #C4C4C4;
+        text-align: center;
+    }
+}
