@@ -11,9 +11,22 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
+
+        .tag{
+            margin: 2rem;
+            padding: 0.8rem;
+            background: #8257E6;
+            border-radius: 3px;
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17.5px;
+            max-width: 10rem;
+            color: #FEFBFB;
+        }
         
-        p{
-            margin: 30rem 20rem 2rem 2rem;  
+        .title{
+            margin: 26rem 20rem 2rem 2rem;  
             font-family: 'Lexend Deca', sans-serif;
             font-weight: 400;
             font-size: 24px;
@@ -36,11 +49,24 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50% 50%;
+
+            .tag{
+                margin: 1rem 2rem;
+                padding: 0.8rem;
+                background: #8257E6;
+                border-radius: 3px;
+                font-family: 'Lexend Deca', sans-serif;
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                max-width: 9rem;
+                color: #FEFBFB;
+            }
             
             
             
-            p{
-                margin: 12rem 5rem 2rem 2rem;  
+            .title{
+                margin: 8rem 5rem 2rem 2rem;  
                 font-family: 'Lexend Deca', sans-serif;
                 font-weight: 400;
                 font-size: 13px;

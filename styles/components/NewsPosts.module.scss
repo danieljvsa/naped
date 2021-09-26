@@ -25,6 +25,19 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50% 50%;
+
+            .tag{
+                margin: 1rem 2rem;
+                padding: 0.8rem;
+                background: #8257E6;
+                border-radius: 3px;
+                font-family: 'Lexend Deca', sans-serif;
+                font-weight: 400;
+                font-size: 9.5px;
+                line-height: 12.5px;
+                max-width: 8.7rem;
+                color: #FEFBFB;
+            }
         }
 
         .content{
