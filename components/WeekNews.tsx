@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { NewsContext } from '../contexts/NewsContext'
 
 export function WeekNews(){
-    const {newsWeek} = useContext(NewsContext)
+    const {newsWeek, activeCurrentNews} = useContext(NewsContext)
     return(
         <div className={styles.week_pannel}>
             <div className={styles.title}>
@@ -14,8 +14,8 @@ export function WeekNews(){
             {newsWeek?.map((news) => (
                 <div className={styles.pannel} style={{backgroundImage: "linear-gradient(360deg, #13131F 0%, rgba(19, 19, 31, 0) 100%), url(" + news.image + ")"}} key={news.id}>  
                     <p className={styles.tag}>{news.tag}</p>
-                    <p>
-                        {news.title}
+                    <p onClick={() => (activeCurrentNews(news))}>
+                        <Link href={`/news/${news.id}`}>{news.title}</Link>
                     </p>
                 </div>
             ))}

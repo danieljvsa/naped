@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { NewsContext } from '../contexts/NewsContext'
 
 export function NewsPosts(){
-    const { newsDay } = useContext(NewsContext)
+    const { newsDay, activeCurrentNews } = useContext(NewsContext)
     return(
         <div className={styles.movies_pannel}>
             {newsDay?.map((news) => (
@@ -23,8 +23,8 @@ export function NewsPosts(){
                     <span>
                         {news.date}
                     </span>
-                    <button>
-                        <Link href="#">Ler Noticia</Link>
+                    <button onClick={() => (activeCurrentNews(news))}>
+                        <Link href={`/news/${news.id}`}>Ler Noticia</Link>
                     </button>
                 </div>
             </div> 
@@ -33,3 +33,4 @@ export function NewsPosts(){
         </div>
     )
 }
+

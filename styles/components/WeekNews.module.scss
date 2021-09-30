@@ -31,7 +31,7 @@
         background-position: 50% 50%;
         
         .tag{
-            margin: 1rem 2rem;
+            margin: 1rem 1rem;
             padding: 0.8rem;
             background: #8257E6;
             border-radius: 3px;
@@ -39,7 +39,7 @@
             font-weight: 400;
             font-size: 11px;
             line-height: 15px;
-            max-width: 12.4rem;
+            max-width: fit-content;
             color: #FEFBFB;
         }
         
@@ -50,6 +50,14 @@
             font-size: 13px;
             line-height: 20px;  
             color: #FEFBFB;
+
+            a{
+                color: #FEFBFB;
+            }
+
+            :hover{
+                text-decoration: underline #FEFBFB;
+            }
         }
     }
 }

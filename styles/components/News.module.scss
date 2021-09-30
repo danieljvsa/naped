@@ -1,0 +1,82 @@
+.news{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .header{
+        margin-bottom: 2rem;
+        h2{
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+            font-size: 36px;
+            line-height: 55px;
+            color: #FFFFFF;
+            //margin-bottom: 0.5rem;
+            margin-top: 8rem;
+        }
+
+        p{
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 55px;
+            color: #C4C4C4;
+            //margin-bottom: 0.5rem;
+        }
+
+        span{
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 55px;
+            color: #C4C4C4;
+        }
+    }
+
+    .main{
+        .pannel{
+            height: 39.1875rem;
+            max-width: 100%;
+            margin-bottom: 2.8rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 50% 50%;
+            flex-grow: 1;
+            
+            div{
+                padding: 1rem 1rem;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .tag{
+                    //margin: 1rem 2rem;
+                    padding: 0.8rem;
+                    background: #8257E6;
+                    border-radius: 3px;
+                    font-family: 'Lexend Deca', sans-serif;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 15px;
+                    max-width: fit-content;
+                    color: #FEFBFB;
+                }
+            }
+            
+        }
+
+        .paragraph{
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 40px;
+            max-width: 100%;
+            color: #C4C4C4;
+            margin-bottom: 2rem;
+        }
+
+        :last-child{
+            margin: 0;
+        }
+    }
+}

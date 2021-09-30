@@ -11,7 +11,7 @@ export function Header(){
             </div>
             <div className={styles.menu}>
                 <ul className={styles.nav}>
-                    <li><Link href="#"><a>Home</a></Link></li>
+                    <li><Link href="/"><a>Home</a></Link></li>
                     <li><Link href="#"><a>Séries</a></Link></li>
                     <li><Link href="#"><a>Filmes</a></Link></li>
                     <li><Link href="#"><a>Animes</a></Link></li>

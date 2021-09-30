@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { NewsContext } from '../contexts/NewsContext'
 
 export function RecentNews(){
-    const {newsRecent} = useContext(NewsContext)
+    const {newsRecent, activeCurrentNews} = useContext(NewsContext)
     return(
         <div className={styles.news_pannel}>
             <div className={styles.title}>
@@ -15,15 +15,15 @@ export function RecentNews(){
                     (Array.isArray(news.image)) ? (
                         <div className={styles.pannel} style={{backgroundImage: "linear-gradient(360deg, #13131F 0%, rgba(19, 19, 31, 0) 100%), url(" + news.image[0] + ")"}} key={news.id}>  
                             <p className={styles.tag}>{news.tag}</p>
-                            <p>
-                                {news.title} {console.log(Array.isArray(news.image))}
+                            <p onClick={() => (activeCurrentNews(news))}>
+                                <Link href={`/news/${news.id}`}>{news.title}</Link>
                             </p>
                         </div>
                     ) : (
                         <div className={styles.pannel} style={{backgroundImage: "linear-gradient(360deg, #13131F 0%, rgba(19, 19, 31, 0) 100%), url(" + news.image + ")"}} key={news.id}>  
                             <p className={styles.tag}>{news.tag}</p>
-                            <p>
-                                {news.title} {console.log(Array.isArray(news.image))}
+                            <p onClick={() => (activeCurrentNews(news))}>
+                                <Link href={`/news/${news.id}`}>{news.title}</Link>
                             </p>
                         </div>
                     )
