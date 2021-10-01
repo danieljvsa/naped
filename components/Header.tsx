@@ -14,7 +14,7 @@ export function Header(){
                     <li><Link href="/"><a>Home</a></Link></li>
                     <li><Link href="#"><a>Séries</a></Link></li>
                     <li><Link href="#"><a>Filmes</a></Link></li>
-                    <li><Link href="#"><a>Animes</a></Link></li>
+                    <li><Link href="/animes"><a>Animes</a></Link></li>
                     <li><Link href="#"><a>Games</a></Link></li>
                 </ul>
                 <div>

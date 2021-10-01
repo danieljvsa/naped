@@ -44,8 +44,8 @@ export function MoviesPannel(){
                 )}
                 {(newsHeader != null) ? (
                     <div className={styles.pannel} style={{backgroundImage: "linear-gradient(360deg, #13131F 0%, rgba(19, 19, 31, 0) 100%), url(" + newsHeader[2].image + ")"}}>                       
-                        <p className={styles.tag} onClick={() => (activeCurrentNews(newsHeader[2]))}>{newsHeader[2].tag}</p>
-                        <h4 className={styles.title}>
+                        <p className={styles.tag} >{newsHeader[2].tag}</p>
+                        <h4 className={styles.title} onClick={() => (activeCurrentNews(newsHeader[2]))}>
                             <Link href={`/news/${newsHeader[2].id}`}>{newsHeader[2].title}</Link>
                         </h4>
                     </div>
