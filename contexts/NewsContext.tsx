@@ -23,6 +23,9 @@ interface NewsContextType{
     paragraphSecond: string | null,
     paragraphThird: string | null,
     activeCurrentNews: (news: News) => void,  
+    value: boolean,
+    newsTitle: string,
+    search: (data: any) => void
 }
 
 
@@ -43,6 +46,8 @@ export function NewsProvider({children}: any) {
     const [paragraphFirst, setParahraphFirst] = useState<string | null>('')
     const [paragraphSecond, setParahraphSecond] = useState<string | null>('')
     const [paragraphThird, setParahraphThird] = useState<string | null>('')
+    const [value, setValue] = useState(false)
+    const [newsTitle, setNewsTitle] = useState('')
 
     useEffect(() => {
         try {
@@ -117,8 +122,17 @@ export function NewsProvider({children}: any) {
         console.log(paragraph)
     }
 
+    async function search(data: any) {
+        if (data.value == "" || data.value == undefined) {
+            setValue(false)
+        }else{
+            setValue(true)
+            setNewsTitle(data.value)
+        }
+    }
+
     return (
-        <NewsContext.Provider value={{  paragraphThird, paragraphSecond, paragraphFirst, newsBody, currentNews, activeCurrentNews, newsHeader, newsAnimes, newsDay, newsRecent, newsWeek}}>
+        <NewsContext.Provider value={{ search, value, newsTitle, paragraphThird, paragraphSecond, paragraphFirst, newsBody, currentNews, activeCurrentNews, newsHeader, newsAnimes, newsDay, newsRecent, newsWeek}}>
             {children}
         </NewsContext.Provider>
     )

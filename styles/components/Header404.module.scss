@@ -1,0 +1,56 @@
+.container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo{
+        margin: 2rem 0;
+        h3{
+            font-family: 'Lexend Deca', sans-serif;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 30px;
+            color: #8257E6;
+        }
+    }
+
+    .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+
+        .nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                font-family: 'Inter', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                margin-right: 80px;
+
+                a{
+                    background: linear-gradient(180deg, #C4C4C4 0%, rgba(196, 196, 196, 0) 85.42%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+
+            :last-child{
+                margin: 0;
+            }
+
+            :hover{
+                border-bottom: 2px solid #8257E6;
+            }
+
+            :focus{
+                border-bottom: 2px solid #8257E6;
+            }
+        }
+    }
+}

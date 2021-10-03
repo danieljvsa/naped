@@ -3,6 +3,7 @@ import Head from 'next/head'
 import React from 'react'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
+import { NewsAnimes } from '../components/newsAnimes'
 import { TitleAnimes } from '../components/TitleAnimes'
 
 import styles from '../styles/pages/Animes.module.scss'
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       </div>
       <main className={styles.larguraMaximaContainer}>
         <TitleAnimes />
+        <NewsAnimes />
       </main>
       <footer className={styles.larguraMaximaContainer}>
         <Footer />
