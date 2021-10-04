@@ -26,6 +26,7 @@ Clone o projeto e acesse a pasta do mesmo.
 ```bash
 $ git clone https://github.com/danieljvsa/naped
 $ cd naped
+$ npm install
 $ npm run dev
 ```
 
