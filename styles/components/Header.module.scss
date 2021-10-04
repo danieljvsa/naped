@@ -14,6 +14,17 @@
         }
     }
 
+    .btn{
+        background-color: transparent;
+        border: none;
+        color: #FFF;
+        font-size: 36px;
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        display: none;
+    }
+
     .menu{
         display: flex;
         justify-content: center;
@@ -32,6 +43,7 @@
                 font-size: 16px;
                 line-height: 19px;
                 margin-right: 3.75rem;
+                
 
                 a{
                     color: #C4C4C4;
@@ -51,21 +63,86 @@
             }
         }
 
-        button{
-            padding: 0.4rem 1.2rem;
-            border: 1px solid #8257E6;
-            border-radius: 30px;
-            font-family: 'Lexend Deca', sans-serif;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 17px;
+        div{
+            button{
+                padding: 0.4rem 1.2rem;
+                border: 1px solid #8257E6;
+                border-radius: 30px;
+                font-family: 'Lexend Deca', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                margin: 0;
+                background: transparent;
+    
+                a{
+                    color: #FEFBFB;
+                }        
+    
+            }
+        }
+        
+    }
+}
+
+@media (max-width: 1300px) {
+    .container_header{
+        margin: 0 2rem !important;
+    }
+}
+
+@media (max-width: 1050px) {
+.container_header{   
+    flex-direction: column !important;
+    padding: 0 !important;
+    align-items: flex-start !important; 
+    .btn {
+        display: flex !important;
+    }
+    .menu{           
+        overflow: hidden !important;
+        text-align: center !important;
+        flex-direction: column !important;
+        width: 100% !important;
+        margin: 0 !important;
+        height: 0 !important;
+        
+        .nav{
+            text-align: center !important;
+            flex-direction: column !important;
+            width: 100% !important;
+            margin: 0 !important;
             
-            background: transparent;
+            li{
+                margin: 1rem 0 !important;
+                width: 100% !important;
+                text-align: center !important;
 
-            a{
-                color: #FEFBFB;
-            }        
+                a{
+                    margin: 0 !important;
+                }
+            }
 
+            li:hover{
+                border: none !important;
+            }
+
+            li:focus{
+                border: none !important;
+            }
+        }
+
+        div{
+            button{
+                margin: 1rem 0 !important;
+                width: 100% !important;
+                text-align: center !important;
+
+                a{
+                    margin: 0 !important;
+                }
+            }
         }
     }
+}
 }

@@ -1,5 +1,6 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
+import Script from 'next/script'
 import React from 'react'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
@@ -24,6 +25,7 @@ const Home: NextPage = () => {
       <footer className={styles.larguraMaximaContainer}>
         <Footer />
       </footer>
+      
     </div>
   )
 }

@@ -88,3 +88,17 @@
         }
     }
 }
+
+@media (max-width: 1300px) {
+    .container{
+        margin: 8rem 2rem 0 2rem !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .pagination{
+        li{
+            font-size: 14px !important;
+        }
+    }
+}

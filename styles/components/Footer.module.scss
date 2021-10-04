@@ -23,3 +23,15 @@
         text-align: center;
     }
 }
+
+@media (max-width: 1300px) {
+    .footer{
+        margin: 10rem 2rem 2rem 2rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer{
+        margin: 3rem 2rem 2rem 2rem !important;
+    }
+}

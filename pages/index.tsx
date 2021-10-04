@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import React from 'react'
+import {} from 'jquery';
+import React, { useEffect, useState } from 'react'
 import { Footer } from '../components/Footer'
 import { Header } from '../components/Header'
 import { MoviesPannel } from '../components/MoviesPannel'
@@ -12,6 +13,8 @@ import { WeekNews } from '../components/WeekNews'
 import styles from '../styles/pages/Home.module.scss'
 
 const Home: NextPage = () => {
+  
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -32,6 +35,7 @@ const Home: NextPage = () => {
       <footer className={styles.larguraMaximaContainer}>
         <Footer />
       </footer>
+      
     </div>
   )
 }

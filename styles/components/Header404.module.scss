@@ -54,3 +54,15 @@
         }
     }
 }
+
+@media (max-width: 1300px) {
+    .container_header{
+        margin: 0 2rem;
+    }
+}
+
+@media (max-width: 1050px) {
+    .menu{
+        display: none !important;
+    }
+}

@@ -9,7 +9,7 @@ export function NewsAnimes(){
     const { newsAnimes, activeCurrentNews, value, newsTitle } = useContext(NewsContext)
     const [newsPerPage, setNewsPerPage] = useState(12)
     const [currentPage, setCurrentPage] = useState(1)
-    const pageNumbers = []
+    const pageNumbers: number[] = []
 
     const indexOfLastNews = currentPage * newsPerPage
     const indexOfFirstNews = indexOfLastNews - newsPerPage
@@ -83,11 +83,26 @@ export function NewsAnimes(){
                     <li onClick={() => paginateBack()}>
                         <i><FontAwesomeIcon icon={faChevronLeft} /></i>         
                     </li>
-                    {pageNumbers.map((number) => (
-                        <li onClick={() => paginate(number)} key={number}>
-                            {number}
-                        </li>                          
-                    ))}
+                    
+                    <li onClick={() => paginate(pageNumbers[0])} key={pageNumbers[0]}>
+                        {pageNumbers[0]}
+                    </li> 
+                    <li onClick={() => paginate(pageNumbers[1])} key={pageNumbers[1]}>
+                        {pageNumbers[1]}
+                    </li> 
+
+                    <li onClick={() => paginate(pageNumbers[2])} key={pageNumbers[3]}>
+                        ...
+                    </li>
+
+                    <li onClick={() => paginate(pageNumbers[8])} key={pageNumbers[8]}>
+                        {pageNumbers[8]}
+                    </li>
+                    
+                    <li onClick={() => paginate(pageNumbers[9])} key={pageNumbers[9]}>
+                        {pageNumbers[9]}
+                    </li>
+
                     <li onClick={() => paginateForward()}>
                         <i><FontAwesomeIcon icon={faChevronRight} /></i>
                     </li>

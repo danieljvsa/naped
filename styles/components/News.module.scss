@@ -80,3 +80,33 @@
         }
     }
 }
+
+@media (max-width: 1300px) {
+    .news{
+        margin: 0 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header{
+        h2{
+            font-size: 32px !important;
+            line-height: 40px !important;
+            margin-top: 3rem !important;
+        }
+
+        p{
+            font-size: 20px !important;
+            line-height: 40px !important;
+        }
+
+        span{
+            font-size: 16px !important;
+            line-height: 40px !important;
+        }
+    }
+    
+    .paragraph{
+        font-size: 20px !important;
+    }
+}

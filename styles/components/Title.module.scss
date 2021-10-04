@@ -18,3 +18,24 @@
         color: #C4C4C4;
     }
 }
+
+@media (max-width: 1300px) {
+    .title{
+        margin: 8rem 2rem 4rem 2rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .title{
+        margin: 4rem 0 4rem 0 !important;
+        h2{
+            margin: 0 2rem 2rem 2rem !important;
+            font-size: 38px !important;
+        }
+
+        p{
+            margin: 0 2rem !important;
+            font-size: 16px !important;
+        }
+    }
+}

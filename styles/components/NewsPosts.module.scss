@@ -27,7 +27,7 @@
             background-position: 50% 50%;
 
             .tag{
-                margin: 1rem 2rem;
+                margin: 1rem 1rem;
                 padding: 0.8rem;
                 background: #8257E6;
                 border-radius: 3px;
@@ -45,7 +45,6 @@
             justify-content: flex-start;
             align-items: flex-start;
             flex-direction: column;
-            width: 590px;
             margin-right: 8rem;
 
             h4{
@@ -96,7 +95,7 @@
     }
 
     .pannel:first-child{
-        margin-top: 24.5rem;
+        margin-top: 61.5rem;
     }
 
     .pannel:last-child{
@@ -111,4 +110,70 @@
 
 .movies_pannel::-webkit-scrollbar-thumb{
     background: #8257E6;
+}
+
+@media (max-width: 1300px) {
+    .movies_pannel{
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .content{
+        margin-right: 1rem !important;
+    }
+    .movies_pannel{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .img_pannel{
+        height: 150px !important;
+        width: 200px !important;
+    }
+    /*.pannel{
+        h4{
+            font-size: 12px !important;
+        }
+
+        p{
+            font-size:  9px !important;
+        }
+
+        span{
+            font-size: 8px !important;
+        }
+    }*/
+
+    .pannel:first-child{
+        margin-top: 67rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .pannel:first-child{
+        margin-top: 190rem !important;
+    }
+
+    .pannel{
+        flex-direction: column;
+        padding-left: 1rem !important;
+        .img_pannel{
+            width: 100% !important;
+        }
+
+        
+    }
+
+}
+
+@media (max-width: 450px) {
+    .pannel:first-child{
+        margin-top: 203rem !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .pannel:first-child{
+        margin-top: 216rem !important;
+    }
 }

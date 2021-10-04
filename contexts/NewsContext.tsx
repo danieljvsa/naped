@@ -1,4 +1,5 @@
 
+import { setCookie } from "nookies";
 import { createContext, useEffect, useState } from "react";
 
 interface News{
@@ -84,6 +85,9 @@ export function NewsProvider({children}: any) {
 
     async function activeCurrentNews(news: News){
         setCurrentNews(news)
+        setCookie(undefined, 'naped-value', 'true', {
+            maxAge: 60 // 1 hour
+        })
         setNewsBody(news.description.split("."))
         paragraph1(news.description.split("."))
         paragraph2(news.description.split("."))

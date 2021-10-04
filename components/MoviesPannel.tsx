@@ -9,10 +9,12 @@ export function MoviesPannel(){
         <div className={styles.movies_pannel}>
             {(newsHeader != null) ? (
                 <div className={styles.principal_pannel} style={{backgroundImage: "linear-gradient(360deg, #13131F 0%, rgba(19, 19, 31, 0) 100%), url(" + newsHeader[0].image + ")"}}>
-                    <p className={styles.tag}>{newsHeader[0].tag}</p>
-                    <h4 className={styles.title}  onClick={() => (activeCurrentNews(newsHeader[0]))}>
-                        <Link href={`/news/${newsHeader[0].id}`}>{newsHeader[0].title}</Link>
-                    </h4>
+                    <div>
+                        <p className={styles.tag}>{newsHeader[0].tag}</p>
+                        <h4 className={styles.title}  onClick={() => (activeCurrentNews(newsHeader[0]))}>
+                            <Link href={`/news/${newsHeader[0].id}`}>{newsHeader[0].title}</Link>
+                        </h4>
+                    </div>
                 </div>
             ) : (
                 <div className={styles.principal_pannel} style={{backgroundImage: "linear-gradient(360deg, #13131F 0%, rgba(19, 19, 31, 0) 100%), url(" + "/movies/aot.svg" + ")"}}>
@@ -26,7 +28,7 @@ export function MoviesPannel(){
             )}
             <div className={styles.secondary_pannel}>
                 {(newsHeader != null) ? (
-                    <div className={styles.pannel} style={{backgroundImage: "linear-gradient(360deg, #13131F 0%, rgba(19, 19, 31, 0) 100%), url(" + newsHeader[1].image + ")"}}>                       
+                    <div className={styles.pannel} id={styles.firstPannel} style={{backgroundImage: "linear-gradient(360deg, #13131F 0%, rgba(19, 19, 31, 0) 100%), url(" + newsHeader[1].image + ")"}}>                       
                         <p className={styles.tag}>{newsHeader[1].tag}</p>
                         <h4 className={styles.title} onClick={() => (activeCurrentNews(newsHeader[1]))}>
                             <Link href={`/news/${newsHeader[1].id}`}>{newsHeader[1].title}</Link>

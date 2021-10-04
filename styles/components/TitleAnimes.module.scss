@@ -48,3 +48,12 @@
         -webkit-appearance:none;
     }
 }
+
+@media (max-width: 1300px) {
+    .search{
+        margin: 0 2rem;
+    }
+    .title{
+        margin: 8rem 2rem 3rem 2rem !important;
+    }
+}

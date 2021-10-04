@@ -15,3 +15,11 @@
   margin: 0 auto;
 }
 
+@media (max-width: 1050px) {
+  .news_posts{
+    flex-direction: column-reverse !important;
+    margin: 0 2rem !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+}
