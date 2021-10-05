@@ -1,10 +1,10 @@
 import { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
-import Script from 'next/script'
 import { parseCookies } from 'nookies'
 import React, { useContext } from 'react'
 import { Footer } from '../../components/Footer'
 import { Header } from '../../components/Header'
+import { Header404 } from '../../components/Header404'
 import { News } from '../../components/News'
 import { RecentNews } from '../../components/RecentNews'
 import { Title404 } from '../../components/Title404'
@@ -20,11 +20,11 @@ const Home: NextPage = () => {
       <Head>
         <title>Naped | Codelândia</title>
       </Head>
-      <div className={styles.larguraMaximaContainer}>
-        <Header />
-      </div>
       {(currentNews) ?  ( 
         <>
+          <div className={styles.larguraMaximaContainer}>
+            <Header />
+          </div>
           <main className={styles.larguraMaximaContainer}>
             <News />
             <RecentNews />
@@ -34,9 +34,14 @@ const Home: NextPage = () => {
           </footer>
         </>
       ) : (
+        <>
+          <div className={styles.larguraMaximaContainer}>
+            <Header404 />
+          </div>
           <main className={styles.larguraMaximaContainer}>
             <Title404 />
           </main>
+        </>
       )}     
       
     </div>
